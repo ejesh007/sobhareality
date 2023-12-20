@@ -59,9 +59,9 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
   .golf-baner-sec .center-building-sec .building-title {
-    top: -100px;
+    top: -20px;
   }
 }
 
