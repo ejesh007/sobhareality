@@ -5,20 +5,7 @@ console.clear();
 
  
 
-gsap.to('.golf-man',{ 
-  y:-457,
-  scale:1,
-  scrollTrigger:{
-  trigger:".golf-baner-sec",
-  start: "center center",
-  end: "+=1000 center",
-  scrub:1,
-  pin:true,
-  toggleActions:"none none none none",   
- 
-}
-}
-);
+
 
 gsap.to('.center-build',{ 
   y:0,
@@ -34,6 +21,30 @@ gsap.to('.center-build',{
 }
 }
 );
+
+
+ScrollTrigger.matchMedia({
+  "(min-width: 1000px)": function () {
+gsap.to('.golf-man',{ 
+  y:-457,
+  scale:1,
+  scrollTrigger:{
+  trigger:".golf-baner-sec",
+  start: "center center",
+  end: "+=1000 center",
+  scrub:1,
+  pin:true,
+  toggleActions:"none none none none",   
+ 
+}
+}
+);
+return function() {
+  animation.kill();
+  console.log('kill it max-width');
+  }
+  }
+  });
 
 
 
