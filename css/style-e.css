@@ -1,3 +1,19 @@
+@font-face {
+  font-family: chronicle display;
+  src: url(../fonts/ChronicleDisplay-Light.woff2) format("woff2"), url(../fonts/ChronicleDisplay-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ringside;
+  src: url(../fonts/RingsideRegular-Med.woff2) format("woff2"), url(../fonts/RingsideRegular-Med.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 .golf-baner-sec {
   height: 100vh;
   overflow: hidden;
@@ -25,12 +41,123 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: relative;
+}
+
+.golf-baner-sec .center-building-sec .building-title {
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .golf-baner-sec .center-building-sec .building-title {
+    top: 18vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .golf-baner-sec .center-building-sec .building-title {
+    top: -100px;
+  }
+}
+
+.golf-baner-sec .center-building-sec .building-title h1 {
+  font-size: 112px;
+  font-family: chronicle display;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1400px) {
+  .golf-baner-sec .center-building-sec .building-title h1 {
+    font-size: 60px;
+  }
+}
+
+.golf-baner-sec .center-building-sec .building-title .logo-icon {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+  .golf-baner-sec .center-building-sec .building-title .logo-icon img {
+    width: 60px;
+  }
+}
+
+.golf-baner-sec .center-building-sec .building-title p {
+  font-family: ringside;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 1400px) {
+  .golf-baner-sec .center-building-sec .building-title p {
+    font-size: 14px;
+  }
+}
+
+.golf-baner-sec .center-building-sec .s-logo {
+  position: absolute;
+  left: 10%;
+  top: 10vh;
+}
+
+@media (max-width: 1400px) {
+  .golf-baner-sec .center-building-sec .s-logo {
+    top: 5vh;
+  }
+}
+
+.golf-baner-sec .buidling-part {
+  position: relative;
+}
+
+.golf-baner-sec .camp-logo {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .golf-baner-sec .camp-logo {
+    top: 110px;
+  }
 }
 
 .golf-baner-sec .center-build {
   width: 100%;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+  .golf-baner-sec .center-build {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+}
+
+@media (max-width: 767px) {
+  .golf-baner-sec .center-build.for-desk {
+    display: none;
+  }
+}
+
+.golf-baner-sec .center-build.for-mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .golf-baner-sec .center-build.for-mob {
+    display: block;
+  }
 }
 
 .golf-baner-sec .golf-man {

@@ -3,7 +3,7 @@ console.clear();
 
 gsap.to('.golf-man',{ 
   y:-457,
-  scale:1.2,
+  scale:1,
   
   scrollTrigger:{
   trigger:".golf-baner-sec",
