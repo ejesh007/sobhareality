@@ -16,6 +16,7 @@
 
 .golf-baner-sec {
   height: 100vh;
+  height: 100svh;
   overflow: hidden;
   background: url(../images/cloud-banner.png) no-repeat center bottom;
   background-size: cover;
@@ -164,10 +165,22 @@
 
 .golf-baner-sec .golf-man {
   position: absolute;
-  bottom: -517px;
+  bottom: -597px;
   left: 20%;
   z-index: 1;
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
+}
+
+@media (max-width: 767px) {
+  .golf-baner-sec .golf-man {
+    left: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .golf-baner-sec .golf-man img {
+    width: 350px;
+  }
 }
 /*# sourceMappingURL=style-e.css.map */
