@@ -65,14 +65,14 @@
 }
 
 .golf-baner-sec .center-building-sec .building-title h1 {
-  font-size: 112px;
+  font-size: 84px;
   font-family: chronicle display;
   text-transform: uppercase;
 }
 
 @media (max-width: 1400px) {
   .golf-baner-sec .center-building-sec .building-title h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
@@ -135,6 +135,8 @@
   width: 100%;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  position: relative;
+  bottom: -100px;
 }
 
 @media (max-width: 767px) {
