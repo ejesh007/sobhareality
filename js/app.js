@@ -1,10 +1,13 @@
 
 console.clear();
+ 
+
+
+ 
 
 gsap.to('.golf-man',{ 
   y:-457,
   scale:1,
-  
   scrollTrigger:{
   trigger:".golf-baner-sec",
   start: "center center",
@@ -12,7 +15,7 @@ gsap.to('.golf-man',{
   scrub:1,
   pin:true,
   toggleActions:"none none none none",   
-  markers:true,
+ 
 }
 }
 );
@@ -47,7 +50,7 @@ ScrollTrigger.matchMedia({
       scrub:1,
       pin:true,
       toggleActions:"none none none none",   
-      markers:true,
+ 
     }
     }
     );
