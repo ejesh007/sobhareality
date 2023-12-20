@@ -16,7 +16,6 @@
 
 .golf-baner-sec {
   height: 100vh;
-  height: 100svh;
   overflow: hidden;
   background: url(../images/cloud-banner.png) no-repeat center bottom;
   background-size: cover;
@@ -148,7 +147,7 @@
   .golf-baner-sec .center-build {
     -webkit-transform: scale(1.6);
             transform: scale(1.6);
-    bottom: 100px;
+    bottom: 0px;
   }
 }
 
